@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+
+  --color-luxury-slate: #0a0a0a;
+  --color-luxury-gold: #c5a059;
+  --color-luxury-gold-light: #f1e4bc;
+  --color-luxury-cream: #e5e5e5;
+  --color-luxury-charcoal: #050505;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-slate text-luxury-cream font-sans antialiased selection:bg-luxury-gold/30 selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #0a0a0a 0%, #121212 100%);
+}
+
+.gold-text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-luxury-gold via-[#e9d1a1] to-luxury-gold;
+}
+
+.card-luxury {
+  @apply bg-white/5 border border-white/10 rounded-sm hover:border-luxury-gold/30 transition-all duration-500 shadow-sm backdrop-blur-sm;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Ffilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.scroller-bar {
+  @apply fixed top-0 left-0 h-[2px] bg-luxury-gold z-[100] transition-all duration-150;
+}

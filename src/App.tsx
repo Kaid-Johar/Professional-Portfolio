@@ -222,6 +222,7 @@ function About() {
         >
           <ContactItem icon={<Mail size={16} />} label="Enquire" value={PROFILE.contact.email} href={`mailto:${PROFILE.contact.email}`} />
           <ContactItem icon={<Phone size={16} />} label="UAE Presence" value={PROFILE.contact.phone_uae} href={`tel:${PROFILE.contact.phone_uae}`} />
+          <ContactItem icon={<Phone size={16} />} label="India Presence" value={PROFILE.contact.phone_in} href={`tel:${PROFILE.contact.phone_in}`} />
           <ContactItem icon={<Linkedin size={16} />} label="Professional" value="Kaid Johar Bohra" href={`https://linkedin.com/in/${PROFILE.contact.linkedin}`} />
         </motion.div>
       </div>
@@ -481,7 +482,7 @@ function Footer() {
         </div>
         
         <div className="text-[8px] uppercase tracking-[0.6em] text-white/5 font-bold mt-10">
-          Quiet Luxury &middot; Professionalism &middot; Precision
+          Executive Leadership &middot; Professionalism &middot; Strategic Direction
         </div>
       </div>
     </footer>

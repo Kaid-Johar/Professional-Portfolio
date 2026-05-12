@@ -1,7 +1,7 @@
 export const PROFILE = {
   name: "Kaid Johar Bohra",
   title: "Executive Assistant - Sales",
-  summary: "A qualified and professional Marketing and Sales person with 5+ years of experience in managing and developing channels for sales and growth. A quick learner with exceptional self-management skills.",
+  summary: "A qualified and professional Marketing and Sales person with 7+ years of experience in managing and developing channels for sales and growth. A quick learner with exceptional self-management skills.",
   contact: {
     phone_uae: "+971 505198852",
     phone_in: "+91 9806036767",
